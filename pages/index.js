@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Nav from '../components/Nav';
 import requests from '../utils/requests';
+import Results from '../components/Results';
 
 export default function Home({ results }) {
   console.log(results)
@@ -16,6 +17,8 @@ export default function Home({ results }) {
 <Header />
 {/* Navigation Component */}
 <Nav />
+{/* Results */}
+<Results results={results}/>
     </div>
   );
 }
